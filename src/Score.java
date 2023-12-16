@@ -13,7 +13,7 @@ public class Score {
     Consumer<String> printPoint= System.out::println;
     Predicate<Integer> predicateAdvantage=(i)->i>4;
     BiPredicate<Integer, Integer> predicateDeuce=(i,j)->i==4 && j==4;
-    Predicate<Integer> predicateAdvantageLoss=(i)->i>4;
+    Predicate<Integer> predicateAdvantageLoss=(i)->i>=4;
 
     public void getScore(final String points){
 
